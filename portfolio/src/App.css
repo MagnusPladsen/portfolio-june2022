@@ -32,6 +32,9 @@ h3 {
   font-style: italic;
 }
 
+.bold {
+  font-weight: bold;
+}
 
 
 /*   HERO STYLES 
@@ -161,10 +164,10 @@ input {
  /*  background-image: url("./images/icon-sun.svg"); */
   background-position: center;
   background-repeat: no-repeat;
-  height: 30px;
+  height: 45px;
   left: 0;
   top: .5em;
-  width: 30px;
+  width: 45px;
   margin-right: 2em;
   margin-left: 1.5em;
 }
@@ -194,14 +197,15 @@ input {
 -------------------------*/
 footer {
   width: 85vw;
-  position: fixed;
-  bottom: 1em;
+  position: absolute;
+  bottom: 0em;
   color: white;
   text-align: center;
   left: 50%;
   transform: translate(-50%);
   font-family: 'commissioner', sans-serif;
 }
+
 
 
 @media only screen and (min-width: 1000px) {
