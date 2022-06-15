@@ -87,7 +87,6 @@ h3 {
 }
 
 .grid-item {
-  /* width: 85vw; */
   padding: 10px 0 0 0;
   background-color: var(--tile-color);
 }
@@ -149,6 +148,46 @@ input {
   color: black;
 }
 
+/*   WEATHER STYLES
+-------------------------*/
+.weather-container {
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+}
+
+.weather-icon {
+  position: relative;
+ /*  background-image: url("./images/icon-sun.svg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30px;
+  left: 0;
+  top: .5em;
+  width: 30px;
+  margin-right: 2em;
+  margin-left: 1.5em;
+}
+
+.weather-container p {
+  position: relative;
+  top: 0;
+  left: -1em;
+  font-size: 1em;
+  font-family: 'commissioner', 'sans-serif';
+  color: white;
+  letter-spacing: .2em;
+  white-space: nowrap;
+}
+
+.weather-container > *{
+  display: inline-block;
+}
+
+.weather-temp {
+  margin-right: 1.5em;
+  font-weight: bold;
+}
 
 
 /*   FOOTER STYLES 
@@ -175,5 +214,9 @@ footer {
   }
   .todo-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .weather-container p {
+    letter-spacing: .3em;
+    font-size: 1.3em;
   }
 }
