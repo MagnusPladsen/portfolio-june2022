@@ -31,8 +31,6 @@ export default function Weather() {
     }
 
      
-    
-
     const weatherIcon = () => { //Returns the correct icon for the weather condition from API
         if (weather === 'Clear') {
             return sunIcon
@@ -44,7 +42,6 @@ export default function Weather() {
             return snowIcon
         }
     }
-
 
     return (
         <div className="weather-container">

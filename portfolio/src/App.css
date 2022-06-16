@@ -9,6 +9,9 @@
   --cta-hover: rgba(255, 255, 255, 0.5);
 }
 
+
+
+
 /*   GENERAL STYLES
 -------------------------*/
 * {
@@ -28,7 +31,6 @@ body {
   letter-spacing: 1px;
 }
 
-
 h1,
 h2,
 h3 {
@@ -44,7 +46,11 @@ h3 {
   font-weight: bold;
 }
 
-/*  INPUT STYLES */
+
+
+
+/*   INPUT STYLES
+-------------------------*/
 input {
   position: relative;
   top: -1em;
@@ -63,6 +69,7 @@ input {
 
 
 
+
 /*   HERO STYLES 
 -------------------------*/
 .hero-image {
@@ -76,6 +83,7 @@ input {
   height: 100vh;
   width: 100vw;
 }
+
 
 
 
@@ -145,6 +153,7 @@ h2 {
 
 
 
+
 /* SKILLS, INTERESTS STYLES 
 -------------------------*/
 .inner-container {
@@ -159,6 +168,7 @@ h2 {
   padding: 10px;
   background-color: white;
 }
+
 
 
 
@@ -219,6 +229,7 @@ h2 {
 
 
 
+
 /*   QUOTE STYLES 
 -------------------------*/
 .quote-container {
@@ -227,6 +238,8 @@ h2 {
   color: white;
 
 }
+
+
 
 
 @media only screen and (min-width: 1000px) {

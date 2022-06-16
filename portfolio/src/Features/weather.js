@@ -2,8 +2,6 @@ import { createSlice } from "@reduxjs/toolkit"
 import { createAsyncThunk } from "@reduxjs/toolkit"
 import { apiCall } from "../Components/Weather"
 
-
-
 export const fetchWeather = createAsyncThunk('weather/getWeather', async (city) => {
     const apiKey = 'e830364e590c9fc8a17ba641130f732d'
     const cityName = city
@@ -12,8 +10,7 @@ export const fetchWeather = createAsyncThunk('weather/getWeather', async (city) 
     const data = await response.json()
     console.log('FETCHED')
     return data
-}
-)
+})
 
 export const weatherSlice = createSlice({
     name: 'weather',
@@ -49,11 +46,7 @@ export const weatherSlice = createSlice({
             state.hasError = true;
         },
     }
-}
-)
-
-
-
+})
 
 export const selectWeather = state => state.weather.weather;
 export const selectTemp = state => state.weather.temp;
