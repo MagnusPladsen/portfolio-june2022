@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Magnus from './Components/Magnus';
-import Todo from './Components/Todo';
-import TodoList from './Components/TodoList';
 import InspoQuote from './Components/InspoQuote';
 import Weather from './Components/Weather';
+import Skills from './Components/Skills';
+import Interests from './Components/Interests';
 
 function App() {
   return (
@@ -14,13 +14,13 @@ function App() {
       <header className="App-header">
         <div className="grid-container">
           <Magnus />
-          <Todo />
-          <TodoList />
+          {/* <Todo /> */}
+          {/* <TodoList /> */}
+          <Skills />
+          <Interests />
+          <InspoQuote />
         </div>
       </header>
-      <footer>
-        <InspoQuote />
-      </footer>
     </div>
   );
 }

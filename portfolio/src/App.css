@@ -15,11 +15,19 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Commissioner', sans-serif;
   font-size: 1em;
+  height: 100%;
+  overflow-x: hidden;
+
 }
+
 
 h1,
 h2,
@@ -36,16 +44,35 @@ h3 {
   font-weight: bold;
 }
 
+/*  INPUT STYLES */
+input {
+  position: relative;
+  top: -1em;
+  padding: 8px 20px;
+  width: 44vw;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 0px;
+  box-sizing: border-box;
+  background-color: none;
+  font-family: 'commissioner', sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+
 
 /*   HERO STYLES 
 -------------------------*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/main-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/main-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2px);
-  position: absolute;
+  filter: blur(1px);
+  position: fixed;
+  /* position: absolute; */
   height: 100vh;
   width: 100vw;
 }
@@ -72,11 +99,13 @@ h3 {
   background-color: var(--cta-hover);
 }
 
+
+
 /*   HEADER STYLES 
 -------------------------*/
 .App-header {
   position: absolute;
-  top: 7em;
+  top: 8em;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -94,62 +123,42 @@ h3 {
   background-color: var(--tile-color);
 }
 
-.todo-container {
+h1 {
+  margin-top: 0;
+  margin-bottom: 0em;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+/*   MAGNUS STYLES 
+-------------------------*/
+.about {
+  display: inline-block;
+}
+
+
+
+/* SKILLS, INTERESTS STYLES 
+-------------------------*/
+.inner-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 14px; 
   padding: 14px!important;
 }
 
-.todo-tile {
+.inner-tile {
   white-space: nowrap;
   padding: 10px;
+  background-color: white;
 }
 
-.todo-tile:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
 
-.todo-red {background-color: var(--todo-red);}
-.todo-blue {background-color: var(--todo-blue);}
-.todo-green {background-color: var(--todo-green);}
-
-
-
-/*   H1 STYLES */
-h1 {
-  position: relative;
-  font-weight: bold;
-  font-size: 2.3em;
-  top: -0.7em;
-  text-decoration: underline;
-}
-
-/*  H2 STYLES */
-h2 {
-  position: relative;
-  font-weight: bold;
-  font-size: 1.5em;
-  top: -0.7em;
-}
-
-/*  INPUT STYLES */
-input {
-  position: relative;
-  top: -1em;
-  padding: 8px 20px;
-  width: 44vw;
-  margin: 8px 0;
-  display: inline-block;
-  border: none;
-  border-radius: 0px;
-  box-sizing: border-box;
-  background-color: none;
-  font-family: 'commissioner', sans-serif;
-  font-size: 1em;
-  color: black;
-}
 
 /*   WEATHER STYLES
 -------------------------*/
@@ -157,11 +166,12 @@ input {
   position: absolute;
   width: 100vw;
   text-align: center;
+  top: .5em;
+  
 }
 
 .weather-icon {
   position: relative;
- /*  background-image: url("./images/icon-sun.svg"); */
   background-position: center;
   background-repeat: no-repeat;
   height: 45px;
@@ -192,35 +202,42 @@ input {
   font-weight: bold;
 }
 
-
-/*   FOOTER STYLES 
--------------------------*/
-footer {
-  width: 85vw;
+#city {
   position: absolute;
-  bottom: 0em;
-  color: white;
-  text-align: center;
+  width: 85vw;
+  top: 4em;
   left: 50%;
   transform: translate(-50%);
-  font-family: 'commissioner', sans-serif;
+}
+
+.bold {
+  margin-left: 1em;
 }
 
 
 
+/*   QUOTE STYLES 
+-------------------------*/
+.quote-container {
+  position: relative;
+  margin-bottom: 0;
+  color: white;
+
+}
+
+
 @media only screen and (min-width: 1000px) {
   .grid-container {
-    width: 40vw;
-    /* gap: 30px; */
+    width: 50vw;
   }
-  input {
-    width: 30vw;
-  }
-  .todo-container {
+  .inner-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .weather-container p {
     letter-spacing: .3em;
     font-size: 1.3em;
+  }
+  #city {
+    width: 50vw;
   }
 }
