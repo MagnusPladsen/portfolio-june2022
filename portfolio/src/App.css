@@ -1,7 +1,7 @@
 /*   VARIABLES
 -------------------------*/
 :root {
-  --tile-color: rgba(217, 217, 217, 0.5);
+  --tile-color: rgba(217, 217, 217, 0.7);
   --tile-color-hover: rgba(217, 217, 217, 0.7);
   --todo-red: rgba(233, 173, 173, 1);
   --todo-green: rgba(173, 233, 173, 1);
@@ -181,6 +181,7 @@ h2 {
   white-space: nowrap;
   padding: 10px;
   background-color: white;
+  color: rgb(87, 86, 86);
 }
 
 
