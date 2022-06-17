@@ -19,6 +19,8 @@ function App() {
         return 'rainBG'
     } else if (weather === 'Snow') {
         return 'snowBG'
+    } else {
+      return 'defaultBG'
     }
 }
   return (

@@ -1,8 +1,8 @@
 /*   VARIABLES
 -------------------------*/
 :root {
-  --tile-color: rgba(217, 217, 217, 0.7);
-  --tile-color-hover: rgba(217, 217, 217, 0.7);
+  --tile-color: rgba(169, 169, 169, 0.7);
+  --tile-color-old: rgba(217, 217, 217, 0.7);
   --todo-red: rgba(233, 173, 173, 1);
   --todo-green: rgba(173, 233, 173, 1);
   --todo-blue: rgba(173, 173, 233, 1);
@@ -99,6 +99,11 @@ input {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/snow.jpg");
 }
 
+#defaultBG {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/main-hero.jpg");
+}
+
+
 
 
 /*   CTA STYLES
@@ -162,10 +167,24 @@ h2 {
 /*   MAGNUS STYLES 
 -------------------------*/
 .about {
-  display: inline-block;
+  position: relative;
+  top: -1em;
 }
 
+.links {
+  position: relative;
+  top: -1em;
+}
 
+.links i {
+  margin-left: 1em;
+  margin-right: 1em;
+  color: white;
+}
+
+.links a:hover {
+  cursor: pointer;
+}
 
 
 /* SKILLS, INTERESTS STYLES 
@@ -270,5 +289,9 @@ h2 {
   }
   #city {
     width: 50vw;
+  }
+  .links i {
+    margin-right: 3em;
+    margin-left: 3em;
   }
 }
