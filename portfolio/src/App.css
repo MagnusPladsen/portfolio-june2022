@@ -7,6 +7,7 @@
   --todo-green: rgba(173, 233, 173, 1);
   --todo-blue: rgba(173, 173, 233, 1);
   --cta-hover: rgba(255, 255, 255, 0.5);
+  --font-grey: rgb(87, 86, 86);
 }
 
 
@@ -117,15 +118,12 @@ input {
   text-decoration: none;
 }
 
-.cta-about {
+.cta-show {
+  color: var(--font-grey);
   position: relative;
-  top: -1.5em;
+  top: .5em;
+  font-weight: 500;
 }
-
-.cta-about:hover {
-  background-color: var(--cta-hover);
-}
-
 
 
 /*   HEADER STYLES 
@@ -187,6 +185,8 @@ h2 {
 }
 
 
+
+
 /* SKILLS, INTERESTS STYLES 
 -------------------------*/
 .inner-container {
@@ -197,13 +197,22 @@ h2 {
 }
 
 .inner-tile {
+  position: relative;
+  margin-top: .5em;
   white-space: nowrap;
   padding: 10px;
   background-color: white;
-  color: rgb(87, 86, 86);
+  color: var(--font-grey);
 }
 
 
+#hide {
+  display: none;
+}
+
+#show {
+  display: grid;
+}
 
 
 /*   WEATHER STYLES

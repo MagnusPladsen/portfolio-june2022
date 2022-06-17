@@ -9,8 +9,8 @@ export default function Magnus() {
             <h1>Magnus Pladsen</h1>
             <h3 className="about">Frontend Student & Junior Developer</h3>
             <div className="links">
-                <a href={linkedin}><i className="fab fa-2xl fa-linkedin"></i></a>
-                <a href={github}><i className="fab fa-2xl fa-github"></i></a>
+                <a href={linkedin} target="_blank"><i className="fab fa-2xl fa-linkedin"></i></a>
+                <a href={github} target="_blank"><i className="fab fa-2xl fa-github"></i></a>
             </div>
         </div>
         )
