@@ -73,17 +73,31 @@ input {
 /*   HERO STYLES 
 -------------------------*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/main-hero.jpg");
+/*   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/main-hero.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(1px);
+  filter: blur(3px);
   position: fixed;
-  /* position: absolute; */
   height: 100vh;
   width: 100vw;
 }
 
+#sunBG {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/sun.jpg");
+}
+
+#cloudsBG {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/clouds.jpg");
+}
+
+#rainBG {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/rain.jpg");
+}
+
+#snowBG {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./images/snow.jpg");
+}
 
 
 
