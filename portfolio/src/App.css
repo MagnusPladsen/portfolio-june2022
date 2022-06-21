@@ -1,9 +1,8 @@
 /*   VARIABLES
 -------------------------*/
 :root {
-  --tile-color: rgba(169, 169, 169, 0.7);
-  --tile-color-new: rgba(60, 60, 60, 0.7);
-  --tile-color-old: rgba(217, 217, 217, 0.7);
+  --tile-color-old: rgba(169, 169, 169, 0.7);
+  --tile-color: rgba(60, 60, 60, 0.7);
   --todo-red: rgba(233, 173, 173, 1);
   --todo-green: rgba(173, 233, 173, 1);
   --todo-blue: rgba(173, 173, 233, 1);
@@ -71,6 +70,9 @@ input {
   box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
 }
 
+textarea:focus, input:focus{
+  outline: 2px solid var(--tile-color);
+}
 
 
 
@@ -147,7 +149,7 @@ input {
 
 .grid-item {
   padding: 10px 0 0 0;
-  background-color: var(--tile-color-new);
+  background-color: var(--tile-color);
   box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
 }
 
