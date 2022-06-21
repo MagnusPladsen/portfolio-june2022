@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 const skills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Adobe XD'
+    'HTML/CSS', 'JavaScript', 'TypeScript', 'React', 'Redux', 'Adobe XD'
 ]
 
 export default function Skills() {
