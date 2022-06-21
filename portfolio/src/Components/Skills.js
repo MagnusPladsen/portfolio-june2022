@@ -21,7 +21,7 @@ export default function Skills() {
     }
     return (
         <div className="grid-item">
-            <h2>Skills</h2>
+            <h2 className="skills-interest-h2">Skills</h2>
             {/* <a href="#" className="cta cta-show" onClick={handleShowInterests}>{show}</a> */}
             <div className="inner-container">
                 {skills.map((skill, index) => (
