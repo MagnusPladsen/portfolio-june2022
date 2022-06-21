@@ -1,7 +1,7 @@
 import React from "react";
 
 const linkedin = 'https://www.linkedin.com/in/magnus-pladsen-1a2738226'
-const github = 'https://www.linkedin.com/in/magnus-pladsen-1a2738226'
+const github = 'https://github.com/MagnusPladsen'
 
 export default function Magnus() {
     return (
