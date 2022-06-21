@@ -8,7 +8,6 @@ export const fetchWeather = createAsyncThunk('weather/getWeather', async (city) 
     const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`
     const response = await fetch(apiCall)
     const data = await response.json()
-    console.log('FETCHED')
     return data
 })
 

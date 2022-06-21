@@ -34,7 +34,7 @@ function App() {
           {/* <TodoList /> */}
           <Skills />
           <Interests />
-          <InspoQuote />
+          {/* <InspoQuote /> */}
         </div>
       </header>
     </div>
