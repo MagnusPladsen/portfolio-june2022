@@ -35,6 +35,7 @@ function App() {
           <Skills />
           <Interests />
           {/* <InspoQuote /> */}
+          <a className="explore-cta cta" href="#">Homepage</a>
         </div>
       </header>
     </div>
